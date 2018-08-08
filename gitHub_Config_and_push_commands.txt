@@ -1,0 +1,22 @@
+$ cd git
+$ git config --global user.name "satav7"
+$ git config --global user.email "satav.rishab@gmail.com"
+$ git clone https://github.com/satav7/python.git
+  -[use your github repository url]
+$ cd python/
+  -[python is the repository that I had created on git]
+  -[This will appear in the folder once above steps are followed]
+
+-[on your local pc you can create any file and add it to "python/"]
+
+$ git add classifier.py
+  -[classifier.py is the file that I had created]
+$ git status
+
+Steps below are used to add file to git repository everytime:
+$ git commit -m "triaaal file" classifier.py
+$ git push -u origin master
+
+
+
+THANK YOU..
