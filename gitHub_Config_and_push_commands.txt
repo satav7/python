@@ -18,5 +18,21 @@ $ git commit -m "triaaal file" classifier.py
 $ git push -u origin master
 
 
+[If by any way you deleted a file in your master class in your local machine, to commit changes in your repository do the foll:]
+$ git reset HEAD classifier.py
+  -[classifier.py is file in my repository]
+$ git rm classifier.py
+$ git commit -m "remove" classifier.py
+$ git push -u origin master
+
+[If a folder is deleted then follow the foll steps:]
+$ git reset HEAD 'machine learning reciepes'
+  -['machine learning reciepes' is a folder in my repository]
+$ git rm -r 'machine learning reciepes'
+$ git commit -m "error in code" 'machine learning reciepes'
+$ git push -u origin master
+
+
+
 
 THANK YOU..
