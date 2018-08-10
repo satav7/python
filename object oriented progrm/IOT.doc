@@ -1,0 +1,40 @@
+$ pip install --upgrade google-api-python-client
+
+- The following libraries will be installed when you install the client library:
+
+httplib2
+uritemplate
+
+https://github.com/google/google-api-python-client #to get the above files
+
+http://webtest.pythonpaste.org/en/latest/index.html #to test web apps
+- pip install webtest
+
+#WHAT THIS DOES:
+
+WebTest helps you test your WSGI-based web applications. This can be any application that has a
+ WSGI interface, including an application written in a framework that supports WSGI (which includes
+  most actively developed Python web frameworks – almost anything that even nominally supports WSGI 
+  should be testable).
+
+With this you can test your web applications without starting an HTTP server, and without poking 
+into the web framework shortcutting pieces of your application that need to be tested. The tests
+WebTest runs are entirely equivalent to how a WSGI HTTP server would call an application. By testing
+the full stack of your application, the WebTest testing model is sometimes called a functional test, 
+integration test, or acceptance test (though the latter two are not particularly good descriptions).
+This is in contrast to a unit test which tests a particular piece of functionality in your application.
+While complex programming tasks are often suited to unit tests, template logic and simple web
+programming is often best done with functional tests; and regardless of the presence of unit tests,
+no testing strategy is complete without high-level tests to ensure the entire programming system works
+together.
+
+WebTest helps you create tests by providing a convenient interface to run WSGI applications 
+and verify the output.
+
+https://pypi.org/project/pycrypto/
+- pip install pycrypto
+
+Python Cryptography Toolkit (pycrypto)
+This is a collection of both secure hash functions (such as SHA256 and RIPEMD160), and various 
+encryption algorithms (AES, DES, RSA, ElGamal, etc.). The package is structured to make adding 
+new modules easy.
