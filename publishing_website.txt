@@ -1,0 +1,57 @@
+digitalocean
+  -one click apps
+  -django
+  -hostname[anyname]
+  
+[you'll get password, username in email]
+login : root
+
+ssh root@Ip
+[set new password]
+
+use windows scp software:
+SCP
+hostname: IP
+port no 22
+username: root
+password:
+
+home/django/djangoproject
+ copy blog ,personal, db.sqlite3 file...[these are the apps that I had added in settings.py ]
+
+-now in root directory [winSCP app], in djangoproject, open settings.py and install apps
+-now copy the data base files from your project[setting.py] in the root directory [settings.py]
+-even update urls.py file in root directory from your project directory.
+
+
+open terminal for root directory:
+pip install --upgrade django==1.9
+service gunicorn restart
+
+$ nano /etc/nginx/sites-available/django
+
+Django project's static file directory: copy it &
+
+add it to settings.py in root directory file
+
+STATIC_ROOT = '/home/django/django_project/django_project/static'
+STATIC_URL = '/static/'
+
+
+pwd
+cd /home/django/django_project/
+python manage.py collectstatic
+
+
+python manage.py collectstatic
+
+setting domain name: nameserver
+ns1.digitalocean.com
+ns2.digitalocean.com
+ns3.digitalocean.com
+
+in digitalocean, networking , add a domain
+
+
+
+THANKS
