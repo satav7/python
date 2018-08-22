@@ -1,0 +1,38 @@
+In root directory:
+
+sudo apt-get update
+
+sudo apt-get upgrade
+
+sudo apt-get install git
+
+cd /home/django/django_project/
+
+git clone https://github.com/letsencrypt/letsencrypt
+
+cd letsencrypt
+
+./letsencrypt-auto --help
+
+service nginx stop
+
+./letsencrypt-auto certonly --standalone -d example.com ...replacing example.com with your website.
+
+sudo nano /etc/nginx/sites-available/django
+
+server {
+	#listen 80 default_server;
+	#listen [::]:80 default_server ipv6only=on;
+	listen 443 ssl;
+	server_name psyber.io;
+	ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
+	
+
+server {
+	listen 80;
+	server_name example.com;
+	return 301 https://$host$request_uri;
+}
+
+service nginx restart
