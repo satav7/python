@@ -16,7 +16,6 @@ alias ll='ls -l'
 alias ls='ls -F --color=auto --show-control-chars'
 alias node='winpty node.exe'
 alias om='git push -u origin master'
-alias publish='git push -u origin '
 alias put='git commit --all --message=\"$1\" && shift && git push'
 alias topic-start='f(){ b=; git checkout master; git fetch; git rebase; git checkout -b  master; };f'
 
