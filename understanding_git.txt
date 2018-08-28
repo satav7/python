@@ -1,4 +1,17 @@
 $ git clone git://github.com/jesseduffield/lazygit.git
   -[This will clone other git repo.. in your local pc in /c drive]
 
+-git ignore file
+  -$ touch .gitignore
 
+-[using alias]
+  -[some commands that I use ]
+
+$ alias
+alias c='git commit'
+alias chs='git checkout $1 $2 && git status &&:'
+alias gp='sh -c '\''git remote add /usr/bin/bash ; git fetch /usr/bin/bash && git checkout -b  /usr/bin/bash/'\'''
+alias ll='ls -l'
+alias ls='ls -F --color=auto --show-control-chars'
+alias node='winpty node.exe'
+alias om='git push -u origin master'
