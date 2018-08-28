@@ -6,12 +6,18 @@ $ git clone git://github.com/jesseduffield/lazygit.git
 
 -[using alias]
   -[some commands that I use ]
-
+  -[refrence: https://github.com/GitAlias/gitalias#examples ]
 $ alias
-alias c='git commit'
+alias a='git add'
+alias c='git commit -m'
 alias chs='git checkout $1 $2 && git status &&:'
-alias gp='sh -c '\''git remote add /usr/bin/bash ; git fetch /usr/bin/bash && git checkout -b  /usr/bin/bash/'\'''
+alias get='git pull --rebase && git submodule update --init --recursive'
 alias ll='ls -l'
 alias ls='ls -F --color=auto --show-control-chars'
 alias node='winpty node.exe'
 alias om='git push -u origin master'
+alias publish='git push -u origin '
+alias put='git commit --all --message=\"$1\" && shift && git push'
+alias topic-start='f(){ b=; git checkout master; git fetch; git rebase; git checkout -b  master; };f'
+
+
