@@ -9,14 +9,19 @@ $ git clone git://github.com/jesseduffield/lazygit.git
   -[refrence: https://github.com/GitAlias/gitalias#examples ]
 $ alias
 alias a='git add'
+alias b='git branch'
+alias bc='git checkout -b'
 alias c='git commit -m'
+alias ch='git checkout'
 alias chs='git checkout $1 $2 && git status &&:'
+alias dlt='git branch -d'
 alias get='git pull --rebase && git submodule update --init --recursive'
 alias ll='ls -l'
 alias ls='ls -F --color=auto --show-control-chars'
 alias node='winpty node.exe'
 alias om='git push -u origin master'
 alias put='git commit --all --message=\"$1\" && shift && git push'
+alias rh='git reset HEAD'
+alias s='git status'
 alias topic-start='f(){ b=; git checkout master; git fetch; git rebase; git checkout -b  master; };f'
-
 
